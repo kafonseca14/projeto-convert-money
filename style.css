@@ -128,8 +128,12 @@ p {
         display: none;
     }
 
-    * {
+    body {
         background-color: #F4F4F4;
+    }
+
+    #converter-box {
+        border-radius: 0;
     }
 
     .input-ask:first-of-type{
