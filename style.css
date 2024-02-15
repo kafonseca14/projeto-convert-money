@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8c54fb;
+}
+
+.logotipo {
+    width: 200px;
+    margin: 20px 0;
+}
+
+#converter-box {
+    width: 375px;
+    border-radius: 20px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-ask {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+}
+
+.input-ask:first-of-type{
+    margin-top: 25px;
+}
+
+.input-answer {
+    width: 100%;
+    height: 48px;
+    border: 1px #bbbbbb solid;
+    border-radius: 4px;
+    background-color: white;
+    padding-left: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555;
+    appearance: none;
+    cursor: pointer;
+}
+
+#converter-button {
+    width: 100%;
+    height: 48px;
+    background: #772FD3;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#converter-button:hover {
+    opacity: 0.8;
+}
+
+#converter-button:active {
+    opacity: 0.6;
+}
+
+#result-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 276px;
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+}
+
+.individual-result-box {
+    width: 127px;
+    text-align: center;
+}
+
+.individual-result-box:first-of-type {
+    margin-top: 7px;
+}
+
+figcaption, p, figure, b .arrow-img, #result-box, .input-ask, #converter-box {
+    background-color: #F4F4F4;
+}
+
+.flags {
+    width: 44px;
+    background-color: #F4F4F4;
+}
+
+figcaption {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.arrow-img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #555555;
+    margin-top: 4px;
+}
+
+@media screen and (max-width: 900px) {
+    .logotipo {
+        display: none;
+    }
+
+    * {
+        background-color: #F4F4F4;
+    }
+
+    .input-ask:first-of-type{
+        margin-top: 70px;
+    }
+
+    #result-box {
+        margin-top: 50px;
+    }
+
+    #converter-button {
+        margin-top: 60px;
+    }
+}

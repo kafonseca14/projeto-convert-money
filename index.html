@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <img src="./assets/logo.gif" class="logotipo">
+    <div id="converter-box">
+        <label class="input-ask">
+            <b>From:</b>
+            <br>
+            <select class="input-answer" id="currency-select-to-convert">
+                <option value="real">R$ Brazillian Real</option>
+                <option value="dollar">US$ American Dollar</option>
+                <option value="euro">€ Euro</option>
+                <option value="pound">£ Pound Esterling</option>
+                <option value="australlian-dollar">AU$ Australlian Dollar</option>
+                <option value="canadian-dollar">C$ Canadian Dollar</option>
+            </select>
+        </label>
+        <label class="input-ask">
+            <b>To:</b>
+            <br>
+            <select class="input-answer" id="currency-select-converted">
+                <option value="dollar">US$ American Dollar</option>
+                <option value="real">R$ Brazillian Real</option>
+                <option value="euro">€ Euro</option>
+                <option value="pound">£ Pound Esterling</option>
+                <option value="australlian-dollar">AU$ Australlian Dollar</option>
+                <option value="canadian-dollar">C$ Canadian Dollar</option>
+            </select>
+        </label>
+        <label class="input-ask">
+            <b>Amount:</b>
+            <br>
+            <input type="number" placeholder="R$ 10.000,00" class="input-answer" id="value">
+        </label>
+
+        <button id="converter-button">Convert</button>
+
+        <div id="result-box">
+            <div class="individual-result-box">
+                <figure>
+                    <img src="./assets/BR-flag.png" class="flags" id="currency-original-flag">
+                    <figcaption id="currency-original-name">Real</figcaption>
+                </figure>
+                <p class="original-value">R$ 0,00</p>
+            </div>
+
+            <img src="./assets/arrow.png" class="arrow-img" >
+
+            <div class="individual-result-box">
+                <figure>
+                    <img src="./assets/USA-flag.png" class="flags" id="currency-flag">
+                    <figcaption id="currency-name">Dollar</figcaption>
+                </figure>
+                <p class="value-converted">US$ 0,00</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
