@@ -46,6 +46,11 @@ function convertValues() {
                 style: "currency",
                 currency: "CAD"
             }).format(inputValue / canadianDollar)
+        } else if (currencySelect.value == "real") {
+            valueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+            }).format(inputValue)
         }
     }
 
@@ -80,6 +85,11 @@ function convertValues() {
                 style: "currency",
                 currency: "CAD"
             }).format(inputValue * 1.35)
+        } else if (currencySelect.value == "dollar") {
+            valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputValue)
         }
     }
 
@@ -114,6 +124,11 @@ function convertValues() {
                 style: "currency",
                 currency: "CAD"
             }).format(inputValue * 1.45)
+        } else if (currencySelect.value == "euro") {
+            valueConverted.innerHTML = new Intl.NumberFormat("en-UK", {
+                style: "currency",
+                currency: "EUR"
+            }).format(inputValue)
         }
     }
 
@@ -148,6 +163,11 @@ function convertValues() {
                 style: "currency",
                 currency: "BRL"
             }).format(inputValue * 1.70)
+        } else if (currencySelect.value == "pound") {
+            valueConverted.innerHTML = new Intl.NumberFormat("en-UK", {
+                style: "currency",
+                currency: "GBP"
+            }).format(inputValue)
         }
     }
 
@@ -182,6 +202,11 @@ function convertValues() {
                 style: "currency",
                 currency: "CAD"
             }).format(inputValue * 0.88)
+        } else if (currencySelect.value == "australlian-dollar"){
+            valueConverted.innerHTML = new Intl.NumberFormat("en-AU", {
+                style: "currency",
+                currency: "AUD"
+            }).format(inputValue)
         }
     }
 
@@ -211,6 +236,11 @@ function convertValues() {
                 style: "currency",
                 currency: "GBP"
             }).format(inputValue * 0.59)
+        } else if (currencySelect.value == "canadian-dollar") {
+            valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "CAD"
+            }).format(inputValue)
         } else if (currencySelect.value == "canadian-dollar") {
             valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
                 style: "currency",
